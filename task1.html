@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript in HTML</title>
+</head>
+<body>
+  <h2>Printing Tables:</h2>
+  <script>
+    const tables = [19, 18, 25, 17, 22, 125, 155];
+    for (let i = 0; i < tables.length; i++) {
+      console.log(`Table of ${tables[i]}:`);
+      for (let j = 1; j <= 10; j++) {
+        console.log(`${tables[i]} x ${j} = ${tables[i] * j}`);
+      }
+    }
+  </script>
+
+  <h2>Star Pattern Triangle:</h2>
+  <script>
+    const n = 5;
+    let str = '';
+    for (let i = 1; i <= n; i++) {
+      for (let j = 1; j <= i; j++) {
+        str += '* ';
+      }
+      str += '<br>';
+    }
+    document.write(str);
+  </script>
+
+  <h2>Object About Friend:</h2>
+  <script>
+    const friend = {
+      name: 'John Doe',
+      age: 30,
+      gender: 'Male',
+      occupation: 'Software Engineer'
+    };
+    console.log(friend);
+  </script>
+
+  <h2>Array Operations:</h2>
+  <script>
+    let myArray = ['apple', 'banana', 'orange'];
+    console.log(myArray);
+    console.log(myArray[0]); 
+    console.log(myArray[1]); 
+    myArray.push('grape');
+    console.log(myArray);
+    myArray.pop();
+    console.log(myArray);
+  </script>
+</body>
+</html>
